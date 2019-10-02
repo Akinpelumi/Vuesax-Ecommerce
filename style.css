@@ -8,15 +8,16 @@ a{
 	color: inherit;
 }
 body {
+	overflow-x: hidden;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
 }
 header {
-	width: 80.5vw;
+	width: 83vw;
 	float: right;
 	margin-top: 1.25rem;
-	transform: translateX(-15px);
+	transform: translateX(-20px);
 }
 .top_header {
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
@@ -26,20 +27,18 @@ header {
 	height: 55px;
 }
 #top_header_left {
-	transform: translate(-130px, -7px);
+	transform: translate(-180px, -7px);
 	padding: 1.25rem;
-	padding-right: 1.25rem;
+	padding-right: 0.26rem;
 }
 #top_header_right {
-	transform: translate(120px, 17px);
+	transform: translate(155px, 17px);
 	float: left;
 	display: flex;
 	justify-content: space-between;
 }
-#top_header_right > p {
-	font-size: 0.875rem;
-}
 #english {
+	font-size: 0.6875rem;
 	transform: translateY(7px);
 }
 #icon_bell_search {
@@ -51,12 +50,17 @@ header {
 	justify-content: space-between;
 }
 #john_name {
-	padding-top: 0.62rem;
-	font-size: 0.9em;
+	padding-top: 0.625rem;
+	font-size: 0.75rem;
 }
 #john_available {
 	padding-left: 1.25rem;
-	font-size: 0.6875rem;
+	font-size: 0.5rem;
+	font-style: lighter;
+}
+#john_doe_image {
+	padding-top: 0.25rem;
+	transform: translateY(-3px);
 }
 .mid_header {
 	padding-top: 1.25rem;
@@ -68,7 +72,7 @@ header {
 	justify-content: space-between;
 }
 #mid_header_left > p {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 #mid_header_right {
 	transform: translateX(22px);
@@ -81,24 +85,30 @@ header {
 	font-size: 0.875rem;
 }
 #v_stroke {
+	padding: 10px;
+	font-style: lighter;
 	color: #979797;
 }
 #settings {
-	width: 1.25rem;
-	height: 1.25rem;
-	transform: translate(-35px,-10px);
+	width: 0.75rem;
+	height: 0.75rem;
+	transform: translate(-37px,-15px);
+}
+#background {
+	width: 2rem;
+	height: 2rem;
+	transform: translate(-10px,-5px);
 }
 .down_header {
 	margin-top: 1.875rem;
-	font-size: 0.9em;
 	display: flex;
 	justify-content: space-between;
 }
 .down_header_left , .down_header_middle {
-	font-size: 1.125rem;
+	font-size: 0.875rem;
 }
 #down_header_middle {
-	transform: translateX(-45px);
+	transform: translateX(-125px);
 }
 #down_header_right {
 	display: flex;
@@ -106,31 +116,34 @@ header {
 	transform: translateX(10px);
 	border-style: none;
 }
-select {
+.default {
 	background: #FFFFFF;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-	border-radius: 0.3rem;
-	width: 6.25rem;
-	font-size: 0.875rem;
+	border-radius: 8px;
+	transform: translateX(-20px);
+	font-size: 0.5625rem;
 }
 #grid , #list {
 	background: #FFFFFF;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-	border-radius: 0.3rem;
+	border-radius: 8px;
 }
-#list {
-	transform: translateY(2px);
+#list_icon {
+	transform: translateX(-5px);
+}
+#grid_icon{
+	transform: translateX(-5px);
 }
 nav {
-	font-size: 0.9375rem;
+	font-size: 0.625rem;
 	line-height: 2rem;
 	position: absolute;
-	width: 13vw;
+	width: 12vw;
 	height: 260vh;
 	float: left;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.170509);
-	padding-right: 1.25rem;
-	padding-left: 1.25rem;
+	padding-right: 0.9375rem;
+	padding-left: 0.9375rem;
 }
 nav > div {
 	height: 1.875rem;
@@ -152,7 +165,7 @@ nav > div {
 }
 #nav_head > img  {
 	position: absolute;
-	transform: translate(145px,8px);
+	transform: translate(131px,8px);
 	font-size: 1.375rem;
 }
 #options_dashboard {
@@ -174,7 +187,7 @@ nav > div {
 	padding-left: 0.3125rem;
 }
 ul {
-	font-size: 0.9em;
+	font-size: 0.75rem;
 	margin-bottom: 6.875rem;
 }
 li {
@@ -201,20 +214,20 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 }
 aside {
 	position: absolute;
-	width: 18vw;
+	width: 16vw;
 	height: 205vh;
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 	line-height: 2rem;
-	transform: translate(230px,213px);
+	transform: translate(200px,213px);
 	background: #FFFFFF;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
 	border-radius: 8px;
-	padding-left: 1.25rem;
-	padding-right: 1.255rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
 }
 .form_head {
 	margin-top: 1.25rem;
-	font-size: 1.125rem;
+	font-size: 0.875rem;
 }
 #slider_text {
 	display: flex;
@@ -246,7 +259,7 @@ aside {
 	cursor: pointer;
 }
 .form_slider_value {
-	font-size: 1rem;
+	font-size: 0.8125rem;
 	transform: translateY(20px);
 }
 .rating {
@@ -259,36 +272,36 @@ aside {
 	justify-content: space-between;
 }
 .rating_left > p{
-	font-size: 1rem;
+	font-size: 0.8125rem;
 }
 .value > p {
-	font-size: 0.875rem;
+	font-size: 0.625rem;
 }
 form > hr {
-	margin-top: 1.875rem;
+	margin-top: 1.6875rem;
 }
 .side_values {
 	float: right;
-	font-size: 0.75rem;
+	font-size: 0.625rem;
 }
 .clear {
-	transform: translate(-20px,50px);
+	transform: translate(-15px,64px);
 	background: #6F64F8;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
 	border-radius: 8px;
-	font-size: 1.125rem;
+	font-size: 0.75rem;
 	line-height: 1.375rem;
 	color: white;
 	text-align: center;
-	width: 16.875rem;
+	width: 14.7rem;
 	height: 2.1875rem;
 	padding-top: 0.625rem;
 }
 main {
 	position: absolute;
-	width: 58vw;
+	width: 63vw;
 	float: right;
-	transform: translate(520px,213px);
+	transform: translate(450px,213px);
 }
 .main_top {
 	background: #FFFFFF;
@@ -301,7 +314,7 @@ main {
 	border-style: none;
 }
 .search_icon {
-	transform: translate(710px,-35px);
+	transform: translate(770px,-35px);
 }
 .grid {
 	width: 32%;
@@ -346,20 +359,25 @@ main {
 	width: 200px;
 }
 .image_7 {
+	transform: translateY(35px);
 	width: 150px;
 }
 .image_8 {
+	transform: translateY(30px);
 	width: 200px;
 }
 .rate {
-	width: 2.5rem;
+	align-content: center;
+	width: 3rem;
 	background: #6F64F8;
 	border-radius: 3px;
 	color: white;
-	font-size: 0.875rem;
+	font-size: 0.6875rem;
 	text-align: center;
 }
 .rate_icon {
+	padding-top: 0.3125rem;
+	width: 0.5625rem;
 	transform: translateY(2px);
 }
 .grid_text_1  {
@@ -379,18 +397,20 @@ main {
 	border-radius: 0px 0px 0px 8px;
 	font-size: 0.6875rem;
 	line-height: 1.0625rem;
-	width: 7.4375rem;
+	width: 8.1rem;
 	height: 2.5rem;
 	transform: translateY(95px);
 }
 .wishlist_text {
+	font-style: bolder;
 	padding-top: 5px;
-	transform: translate(-25px,6px);
+	transform: translate(-32px,6px);
 }
 .wishlist_icon {
+	font-style: bolder;
 	height: 0.625rem;
 	width: 0.625;
-	transform: translate(30px,12px);
+	transform: translate(28px,14px);
 }
 .cart {
 	display: flex;
@@ -400,18 +420,21 @@ main {
 	font-size: 0.6875rem;
 	font-size: 0.6875rem;
 	color: white;
-	width: 7.4375rem;
+	width: 8.1rem;
 	height: 2.5rem;
 	transform: translateY(95px);
 }
 .cart_text {
+	font-style: bolder;
+	font-size: 0.625rem;
 	padding-top: 0.3125rem;
-	transform: translate(-15px,6px);
+	transform: translate(-26px,6px);
 }
 .cart_icon {
+	font-style: bolder;
 	height: 0.625rem;
 	width: 0.625rem;
-	transform: translate(15px,12px);
+	transform: translate(17px,12px);
 }
 .main_body {
 	margin-top: 1.25rem;
@@ -426,17 +449,17 @@ main {
 	margin-bottom: 1.25rem;
 }
 .pagination__container {
-	transform: translate(570px,1727px);
+	transform: translate(550px,1727px);
     display: flex;
 }
-
 .pagination__prev,
 .pagination__next {
+	transform: translateY(-5px);
     background: #EDEDED;
     padding: 1em;
-    border-radius: 50px;
-    width: 7px;
-    height: 7px;
+    border-radius: 1.25rem;
+    width: 0.3125rem;
+    height: 0.3125rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -445,36 +468,37 @@ main {
 .pagination__numbers {
     background: #EDEDED;
     margin: 0 1em;
-    padding: 0em 2em;
-    border-radius: 50px;
+    padding: 0em 0.5em;
+    border-radius: 3.125rem;
     display: flex;
     align-items: center;
 }
 
 .pagination__numbers>span {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    padding: 0em 0.2em;
+    border-radius: 1.25rem;
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 21px;
+    font-size: 0.75rem;
 }
 
 .pagination__numbers>span.purple {
     background: #6F64F8;
     color: #fff;
-    padding: 4px;
+    padding: 0.25rem;
 }
 .footer_right {
-	transform: translate(1013px,1700px);
+	transform: translate(1040px,1700px);
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1.875rem;
 }
 .footer_right > p {
 	font-size: 0.75rem;
-	transform: translate(75px,5px);
+	transform: translate(40px,5px);
 }
 #logo_footer {
 	width: 6.25rem;
