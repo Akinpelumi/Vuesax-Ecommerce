@@ -108,7 +108,7 @@ header {
 	font-size: 0.875rem;
 }
 #down_header_middle {
-	transform: translateX(-125px);
+	transform: translateX(-115px);
 }
 #down_header_right {
 	display: flex;
@@ -119,14 +119,14 @@ header {
 .default {
 	background: #FFFFFF;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-	border-radius: 8px;
+	border-radius: 5px;
 	transform: translateX(-20px);
 	font-size: 0.5625rem;
 }
-#grid , #list {
+#grid_icon , #list_icon {
 	background: #FFFFFF;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-	border-radius: 8px;
+	border-radius: 5px;
 }
 #list_icon {
 	transform: translateX(-5px);
